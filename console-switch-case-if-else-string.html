@@ -1,0 +1,18 @@
+<html> <body ><center>
+<input id="f"> <button onclick="kg()">Digite o Kg</button>
+<script> var p = document.querySelector("#f")
+function kg(){ 
+if(p.value>50){
+var pagar = "taxado";
+}  
+switch (pagar) {
+  case "taxado":
+    var excesso = parseInt(p.value)-50;
+	console.log(excesso+ "Kg em excesso")
+	var multa = excesso*4;
+	console.log("Pagou uma Multa de R$"+multa);	
+    break;
+  default:
+    console.log("Escapou por pouco");
+} }
+</script>
